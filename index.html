@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shot Put Trainer</title>
+
+    <meta name="theme-color" content="#16a34a">
+    <meta name="description" content="Personal Shot Put Training App">
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="icons/icon-192.png">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+    <h1>🥎 Shot Put Trainer</h1>
+</nav>
+
+<main>
+
+<section class="hero">
+
+<h2>Welcome, Everett!</h2>
+
+<p>Your personal training app.</p>
+
+<div class="goalCards">
+
+<div class="card">
+<h3>Bench Goal</h3>
+<h1 id="benchGoal">105 / 135 lb</h1>
+</div>
+
+<div class="card">
+<h3>Shot Put Goal</h3>
+<h1 id="shotGoal">21 / 30 ft</h1>
+</div>
+
+<div class="card">
+<h3>Workout Streak</h3>
+<h1 id="streak">0 🔥</h1>
+</div>
+
+</div>
+
+</section>
+
+<section class="todayWorkout">
+
+<h2>Today's Workout</h2>
+
+<div id="todayCard">
+
+<h3 id="workoutTitle">Loading...</h3>
+
+<ul id="exerciseList">
+
+</ul>
+
+<button id="completeWorkout">
+Complete Workout ✅
+</button>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Progress</h2>
+
+<div class="progressCard">
+
+<label>Bench Press</label>
+
+<progress id="benchProgress"
+max="135"
+value="105"></progress>
+
+<label>Squat</label>
+
+<progress id="squatProgress"
+max="315"
+value="245"></progress>
+
+<label>Shot Put</label>
+
+<progress id="shotProgress"
+max="30"
+value="21"></progress>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Personal Records</h2>
+
+<div class="records">
+
+<label>
+
+Bench PR
+
+<input
+type="number"
+id="benchInput"
+placeholder="105">
+
+</label>
+
+<label>
+
+Squat PR
+
+<input
+type="number"
+id="squatInput"
+placeholder="245">
+
+</label>
+
+<label>
+
+Shot Put PR (ft)
+
+<input
+type="number"
+id="shotInput"
+placeholder="21">
+
+</label>
+
+<button id="savePRs">
+Save PRs
+</button>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Rest Timer</h2>
+
+<div class="timerBox">
+
+<h1 id="timerDisplay">
+02:00
+</h1>
+
+<div>
+
+<button onclick="startTimer(60)">
+1 Min
+</button>
+
+<button onclick="startTimer(120)">
+2 Min
+</button>
+
+<button onclick="startTimer(180)">
+3 Min
+</button>
+
+<button onclick="startTimer(300)">
+5 Min
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Achievements</h2>
+
+<div class="badges">
+
+<div class="badge" id="badgeWorkout">
+🏋️ First Workout
+</div>
+
+<div class="badge" id="badgeBench">
+💪 135 Bench
+</div>
+
+<div class="badge" id="badgeShot">
+🥎 30 Foot Throw
+</div>
+
+<div class="badge" id="badgeWeek">
+🔥 7-Day Streak
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+Shot Put Trainer © 2026
+
+</footer>
+
+<script src="workouts.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
