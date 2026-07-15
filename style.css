@@ -1,0 +1,185 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#111827;
+    color:white;
+}
+
+.navbar{
+    background:#16a34a;
+    padding:18px;
+    text-align:center;
+    font-size:22px;
+    font-weight:bold;
+    position:sticky;
+    top:0;
+    box-shadow:0 3px 12px rgba(0,0,0,.4);
+}
+
+main{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+.hero{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.hero h2{
+    font-size:32px;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#cbd5e1;
+    margin-bottom:25px;
+}
+
+.goalCards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1f2937;
+    padding:20px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.35);
+    transition:.2s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+section{
+    background:#1f2937;
+    margin-bottom:25px;
+    padding:22px;
+    border-radius:18px;
+}
+
+section h2{
+    color:#22c55e;
+    margin-bottom:18px;
+}
+
+#todayCard{
+    background:#374151;
+    border-radius:15px;
+    padding:20px;
+}
+
+#exerciseList{
+    margin:15px 0;
+    padding-left:22px;
+}
+
+#exerciseList li{
+    margin-bottom:10px;
+}
+
+.progressCard{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+progress{
+    width:100%;
+    height:22px;
+}
+
+.records{
+    display:flex;
+    flex-direction:column;
+}
+
+input{
+    width:100%;
+    margin-top:6px;
+    margin-bottom:16px;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#111827;
+    color:white;
+    font-size:16px;
+}
+
+button{
+    background:#16a34a;
+    color:white;
+    border:none;
+    border-radius:10px;
+    padding:12px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.2s;
+}
+
+button:hover{
+    background:#15803d;
+    transform:scale(1.03);
+}
+
+.timerBox{
+    text-align:center;
+}
+
+#timerDisplay{
+    font-size:60px;
+    margin:20px 0;
+}
+
+.badges{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+}
+
+.badge{
+    background:#374151;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    opacity:.35;
+    transition:.2s;
+}
+
+.badge.unlocked{
+    background:#16a34a;
+    opacity:1;
+}
+
+footer{
+    text-align:center;
+    color:#94a3b8;
+    padding:25px;
+}
+
+@media(max-width:700px){
+
+.hero h2{
+    font-size:26px;
+}
+
+#timerDisplay{
+    font-size:48px;
+}
+
+button{
+    width:100%;
+    margin-top:8px;
+}
+
+}
